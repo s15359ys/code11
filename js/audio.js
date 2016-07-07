@@ -67,7 +67,16 @@ function bindClickHandler(selector, handler){
   const elm = document.querySelector(selector);
   elm.addEventListener("click", handler);
 }
-
+function music01(){
+  var audio;
+  audio = document.querySelector("audio");
+  audio.src = "audio/01.mp3";
+}
+function music02(){
+  var audio;
+  audio = document.querySelector("audio");
+  audio.src = "audio/02.mp3";
+}
 bindClickHandler("[data-role=play]", play);
 bindClickHandler("[data-role=pause]", pause);
 bindClickHandler("#skip10sec", skip10sec);
@@ -76,3 +85,7 @@ bindClickHandler("#stop", stop);
 bindClickHandler("#mute", mute);
 bindClickHandler("#volumeDown", volumeDown);
 bindClickHandler("#volumeUp", volumeUp);
+var play01 = document.querySelector("#audio01")
+play01.addEventListener("click",music01)
+var play02 = document.querySelector("#audio02")
+play02.addEventListener("click",music02)
