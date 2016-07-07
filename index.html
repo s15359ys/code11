@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello, audio</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1 id="title">Hello, audio!</h1>
+    <audio controls preload src="audio/01.mp3"></audio>
+    <div class="control">
+      <button id="rewind10sec">10 秒戻る</button>
+      <button data-role="play">Play</button>
+      <button data-role="pause">Pause</button>
+      <button id="stop">停止</button>
+      <button id="skip10sec">10 秒スキップ</button>
+      <button id="mute">ミュート</button>
+      <button id="volumeDown">音量減</button>
+      <button id="volumeUp">音量増</button>
+    </div>
+    <script src="js/audio.js"></script>
+  </body>
+</html>
